@@ -1,0 +1,884 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Have a good time! | Have a good time!</title><meta name="author" content="Richard Li"><meta name="copyright" content="Richard Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="函数   12345678910函数返回值类型 函数名 (参数类型 参数1名称，参数类型 参数2名称，参数类型 参数3名称，...)&amp;#123;   函数主体;&amp;#125;eg：int average(int a, int b,int c)&amp;#123;   return (a+b+c)&#x2F;3;&amp;#125;   9种流程控制语句   if-else   for循环   while循环   do-w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Have a good time!">
+<meta property="og:url" content="https://powerhcl.github.io/2024/05/04/Cnote/index.html">
+<meta property="og:site_name" content="Have a good time!">
+<meta property="og:description" content="函数   12345678910函数返回值类型 函数名 (参数类型 参数1名称，参数类型 参数2名称，参数类型 参数3名称，...)&amp;#123;   函数主体;&amp;#125;eg：int average(int a, int b,int c)&amp;#123;   return (a+b+c)&#x2F;3;&amp;#125;   9种流程控制语句   if-else   for循环   while循环   do-w">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://powerhcl.github.io/img/avatar.jpg">
+<meta property="article:published_time" content="2024-05-04T15:31:37.950Z">
+<meta property="article:modified_time" content="2024-05-04T15:35:08.975Z">
+<meta property="article:author" content="Richard Li">
+<meta property="article:tag" content="writing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://powerhcl.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://powerhcl.github.io/2024/05/04/Cnote/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":100,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: Richard Li","link":"链接: ","source":"来源: Have a good time!","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Have a good time!',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-04 23:35:08'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/preloader.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-video-camera"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/about-me/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/03/31/AJtYiQZrzc2g6jo.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Have a good time!"><span class="site-name">Have a good time!</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/photo/"><i class="fa-fw fas fa-camera"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-video-camera"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/about-me/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-04T15:31:37.950Z" title="发表于 2024-05-04 23:31:37">2024-05-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-04T15:35:08.975Z" title="更新于 2024-05-04 23:35:08">2024-05-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><ul>
+<li>
+<p>函数</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">函数返回值类型 函数名 (参数类型 参数<span class="number">1</span>名称，参数类型 参数<span class="number">2</span>名称，参数类型 参数<span class="number">3</span>名称，...)</span><br><span class="line">&#123;</span><br><span class="line">   函数主体;</span><br><span class="line">&#125;</span><br><span class="line">eg：</span><br><span class="line"><span class="type">int</span> <span class="title function_">average</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b,<span class="type">int</span> c)</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">return</span> (a+b+c)/<span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>9种流程控制语句</p>
+<ul>
+<li>
+<p>if-else</p>
+</li>
+<li>
+<p>for循环</p>
+</li>
+<li>
+<p>while循环</p>
+</li>
+<li>
+<p>do-while循环</p>
+</li>
+<li>
+<p>continue结束本次循环</p>
+</li>
+<li>
+<p>break跳出循环</p>
+</li>
+<li>
+<p>switch多路分支选择语句</p>
+</li>
+<li>
+<p>goto转向语句</p>
+</li>
+<li>
+<p>return返回语句</p>
+</li>
+</ul>
+</li>
+<li>
+<p>return的作用有两个，为返回（return 0)；返回值</p>
+</li>
+<li>
+<p><strong>函数如果实在不需要函数返回什么值，就需要用void声明其类型</strong></p>
+</li>
+<li>
+<p>include语句结束不带分号</p>
+</li>
+</ul>
+</li>
+<li>
+<p>代码风格</p>
+<ul>
+<li>
+<p>局部变量使用小写字母</p>
+</li>
+<li>
+<p>全局变量使用大写字母</p>
+</li>
+<li>
+<p>函数名应该写为动作性的结构名，应该带有整体性</p>
+</li>
+<li>
+<p>使用有描述意义的变量名或者函数名</p>
+</li>
+<li>
+<p>语句应该随着在程序中的层次不同而采取相应的缩进</p>
+</li>
+</ul>
+</li>
+<li>
+<p>getchr() //按任意键结束程序，等待</p>
+</li>
+<li>
+<p>数据类型</p>
+<p>C数据类型</p>
+<pre><code>  构造类型
+
+      数组
+
+          
+
+      结构体
+
+      共用体
+
+  基本类型
+
+      字符类型（char）
+
+      数值类型
+
+          整型
+
+              短整型（short）
+
+              整型（int)
+
+              长整型（long）
+
+          浮点型
+
+              单精度（float）
+
+              双精度（double）
+
+      枚举类型（enum）
+
+  指针类型
+
+  空类型（void)
+</code></pre>
+</li>
+<li>
+<p>常量</p>
+<ul>
+<li>
+<p>直接常量（在代码中直接书写）</p>
+<ul>
+<li>
+<p>整型常量</p>
+<ul>
+<li>
+<p>十进制</p>
+</li>
+<li>
+<p>八进制（0开头）</p>
+</li>
+<li>
+<p>十六进制（0x开头）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>实型常量</p>
+<ul>
+<li>
+<p>十进制形式，包含整数，小数。一定要有小数点</p>
+</li>
+<li>
+<p>指数形式，如1234e4，e后面必须有数字且为整数</p>
+</li>
+</ul>
+</li>
+<li>
+<p>字符常量</p>
+<ul>
+<li>‘键盘输入’，单引号加键盘输入表示ASCII码。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>符号常量</p>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define  PI 3.14</span></span><br><span class="line">定义长石pi 其值不能再更改</span><br><span class="line">编译时预处理过程中会将pi出现的地方全部改为<span class="number">3.14</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 变量名一般使用大写表示</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>定义字符串</p>
+<ul>
+<li>
+<p>获取字符串</p>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1</span></span><br><span class="line">char str[<span class="number">100</span>];</span><br><span class="line">scanf(<span class="string">&quot;%s&quot;</span>,&amp;str);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">#2 fgets/gets（已经被标记为不安全，因为无法防止输入超过字符长度</span></span><br><span class="line">char str[<span class="number">100</span>];</span><br><span class="line">fgets(str,sizeof(str),stin);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1 利用数组</span></span><br><span class="line">char str[]=<span class="string">&quot;hello,world&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#2 利用指针</span></span><br><span class="line">char *p=<span class="string">&quot;hello,word&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>输出</p>
+<ul>
+<li>
+<p>输出字符串</p>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    char str[] = <span class="string">&quot;Hello, World!&quot;</span>;<span class="comment">#以数组的形式存储！</span></span><br><span class="line">    int i;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; str[<span class="type">i</span>] != <span class="string">&#x27;\0&#x27;</span>; i++) &#123;</span><br><span class="line">        putchar(str[<span class="type">i</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    putchar(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#字符串以&quot;/0&quot;结尾。</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puts(<span class="string">&quot;string&quot;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>补码，正数就是其二进制本身，负数要先取绝对值，其二进制位取反，再到结果末尾＋1.</p>
+</li>
+<li>
+<p>运算符</p>
+<ul>
+<li>
+<p>++,–</p>
+<p>自增运算符++</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int x=0;</span><br><span class="line">int y=x++;</span><br><span class="line">/*y=0;x=1*/</span><br><span class="line"></span><br><span class="line">int x=0;</span><br><span class="line">int y=++x;</span><br><span class="line">/*y=1,x=1*/</span><br></pre></td></tr></table></figure>
+<p>自减运算符–</p>
+</li>
+<li>
+<p>按位运算符</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int a=2;</span><br><span class="line">int b=3;</span><br><span class="line">int c=a &lt;&lt;1;</span><br><span class="line">/*表示二进制左移一位*/</span><br><span class="line"></span><br><span class="line">&gt;&gt; 有算术右移和逻辑右移两种，算术右移对应的是有符号整数，符号位不动，空余位用符号位填充。</span><br><span class="line">逻辑右移对应无符号整数，全部位往右移动，空余位用0填充。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int a,b,c;</span><br><span class="line">c= a^b;</span><br><span class="line">/*异或，代表二进制位上相同则取1，不同则取0.*/</span><br><span class="line">c=~a;</span><br><span class="line">/*取反，原本为0则取1，原本为1则取0.*/</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int a=4;</span><br><span class="line">int b=5;</span><br><span class="line">int c;</span><br><span class="line">c= a | b;</span><br><span class="line">/*代表将整数的二进制中每一位用“或”的逻辑运算。*/</span><br><span class="line">c=a &amp; b;</span><br><span class="line">/*代表二进制中每一位使用“和”的逻辑运算。*/</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>单目运算符和双目运算符</p>
+<ul>
+<li>
+<p>单目运算符是指操作仅针对一个对象 比如~，！，++，–</p>
+</li>
+<li>
+<p>双目运算符是指操作针对两个对象 比如+，-，*，/, ||,&amp;&amp;</p>
+</li>
+</ul>
+</li>
+<li>
+<p>sizeof()不是函数，是c语言里面的关键字，是单目运算符，优先级比算术运算符高。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>逗号表达式</p>
+<ul>
+<li>一般形式</li>
+</ul>
+<p>表达式1，表达式2，…，表达式n</p>
+<blockquote>
+<p>表达式可以赋值表达式</p>
+</blockquote>
+<blockquote>
+<p>表达式可以是算数表达式</p>
+</blockquote>
+<blockquote>
+<p>也可以是函数调用</p>
+</blockquote>
+<p>A+3，b+4, max(a,b)</p>
+<blockquote>
+<p>还可以是另一个逗号表达式</p>
+</blockquote>
+<p>a+5, (a=3,4+5), b++</p>
+<ul>
+<li>优先级</li>
+</ul>
+<blockquote>
+<p>逗号运算符的优先级是最低的，甚至低于赋值运算，说明赋值运算是倒数第二</p>
+</blockquote>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">int a=1;</span><br><span class="line">a=4*4,a*3;</span><br><span class="line">printf(&quot;%d&quot;,a);</span><br><span class="line">/*输出16*/</span><br><span class="line"></span><br><span class="line">!注意</span><br><span class="line">printf(&quot;%d&quot;,(a=4*4,a*3));</span><br><span class="line">/*输出48*/</span><br><span class="line"></span><br><span class="line">a=(a=4*4,a*3);</span><br><span class="line">/*同样使得a=48*/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>运算符优先级</p>
+<ul>
+<li>
+<p>操作数多的运算符优先级低一点，优先级从高到低：单目、双目（不包含赋值）、赋值、逗号</p>
+</li>
+<li>
+<p>双目运算符优先级：算术运算符、比较运算符、位运算符、逻辑运算符</p>
+</li>
+<li>
+<p>位运算符：~、&amp;、^、|</p>
+</li>
+<li>
+<p>逻辑运算符：！、&amp;&amp;、||</p>
+</li>
+<li>
+<p>赋值运算符具有相同优先级   比如 =、+=、*=、-=、/=……</p>
+</li>
+<li>
+<p>s为数组，*i为指针，则s[i++]的顺序为s[i]，再算i++.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>复合运算符和简单赋值运算符的优先级一样</p>
+</li>
+<li>
+<p>条件判断–分支结构</p>
+<ul>
+<li>
+<p>break语句用来“短路”后面的语句。case是入口，所以Switch与第一个case之间如果有代码将不会被执行。如果去掉break，将从case入点一直执行到最后一个case。</p>
+</li>
+<li>
+<p>不允许在同一个switch结构中出现两个取值相同的case常量表达式</p>
+</li>
+<li>
+<p>switch只能用于相等与否的判断，且只能用于整数。case标签值必须是常量。</p>
+</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">switch (表达式)</span><br><span class="line">&#123;</span><br><span class="line">  case (常量表达式1):</span><br><span class="line">    代码段1;</span><br><span class="line">      break;</span><br><span class="line">  case(常量表达式2):</span><br><span class="line">    代码段2;</span><br><span class="line">      break;</span><br><span class="line">      ....</span><br><span class="line">        default:</span><br><span class="line">    代码段;</span><br><span class="line">    break;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#先执行switch中的表达式，当值与常量表达式的值相等时将跳出循环，如果没有相等的情况，将执行default下的代码块。</span><br><span class="line">/*与if中不同，case语句下要执行多条语句时，可以不用花括号括起来。</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">if ( 判断表达式 )</span><br><span class="line">&#123;</span><br><span class="line">     结构体；</span><br><span class="line">  &#125;</span><br><span class="line">else if (判断表达式)</span><br><span class="line">&#123;</span><br><span class="line">    结构体；</span><br><span class="line">  &#125;</span><br><span class="line">else </span><br><span class="line">&#123;</span><br><span class="line">  结构体；</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">/*花括号并非必须，只是语句形成一个整体。假如没有花括号，if下执行的语句仅为第一行。</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>循环结构</p>
+<ul>
+<li>do—while结构体至少执行一次，之后再计算while的值，如果为真，则会再次执行循环体，否则，跳出do–while结构向下执行。</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">while (表达式)  /*千万不要加入分号，否则将会陷入无线循环*/</span><br><span class="line">&#123;</span><br><span class="line">  结构体;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">/*do ---while*/</span><br><span class="line">do </span><br><span class="line">&#123;</span><br><span class="line">  结构体;</span><br><span class="line">&#125;</span><br><span class="line">while( 表达式 ); /*不要忘了分号*/</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*for (初始化表达式；判断表达式；修正表达式）*/</span><br><span class="line"></span><br><span class="line">for (int i=1;i&lt;=100;i++)</span><br><span class="line">//在循环体内i的值为1—100，跳出循环后i的值为101.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>for循环中的三个表达式可以省略，但是要保留&quot;;&quot;</li>
+</ul>
+</li>
+<li>
+<p>数组</p>
+<ul>
+<li>
+<p>将字符串指针赋值到一个二维数组中的一行，必须使用strcpy.</p>
+</li>
+<li>
+<p>元素个数必须是无符号整型常量，不允许是0，负数和浮点数，也不允许是变量。</p>
+</li>
+<li>
+<p>数组的定义可以和普通变量的定义出现在同一个定义语句中。</p>
+</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">int score[6]=&#123;34,24,13,41,42,43&#125;;</span><br><span class="line">or</span><br><span class="line">int score[]=&#123;34,24,13,41,42,43&#125;;</span><br><span class="line">or </span><br><span class="line">int score[6]=&#123;34,24,13&#125;;/*前三个赋值34,24,13，后三个赋值0*/</span><br><span class="line">or </span><br><span class="line">int score[6]=&#123;0&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//数组一定要初始化!!!!!</span><br><span class="line">int a[10];//随机赋值</span><br><span class="line">a[10]=&#123;0&#125;;</span><br><span class="line">//这种写法是错误的，因为a中已经随机赋值，而除在定义外，需要一个元素一个元素赋值。</span><br><span class="line"></span><br><span class="line">int a[10]=&#123;&#125; </span><br><span class="line">int a[10]=&#123;0&#125;</span><br><span class="line">//上面两个定义方式等价</span><br><span class="line"></span><br><span class="line">//多维数组</span><br><span class="line">int a[3][3]=&#123;1,2,3&#125;   //表示a[0][0]=1,a[0][1]=2,a[0][2]=3,其余的全部为0。</span><br><span class="line">int a[3][3]=&#123;1,&#123;2&#125;&#125;  //这样定义是不正确的，大括号一定要成对出现，即是&#123;&#123;1&#125;,&#123;2&#125;&#125;这样就对了。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//eg.二维数组</span><br><span class="line">int a[2][4]=&#123;&#123;&#125;&#125;;  //a的全部值都为0</span><br><span class="line">int b[3][4]=&#123;&#123;1&#125;,&#123;3,4&#125;&#125;   //b[0][0]=1,b[1][0]=3,b[1][1]=4  其余全部为0</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int n=5;</span><br><span class="line">int b[n]=&#123;1,2,3,4,5&#125;//这样是不对的</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类型 数组名[数组元素个数]</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>求根法</p>
+<ul>
+<li>
+<p>牛顿迭代法</p>
+<p><img src="./pic/173617.png" alt="牛顿迭代法"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>指针</p>
+<ul>
+<li>在32位系统中，无论何种类型的指针，都占据4个字节的内存</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int *p=(int*) 0x0012FF7C</span><br><span class="line"> /*右边加(int*)是因为指针是int型，所以对地址保持的数据类型进行了解释。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>一个注意的点，指针不能直接指向一个实数常量的地址。</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.</span><br><span class="line">  int x=5;</span><br><span class="line">  const int*p =&amp;x; /*意味着p指向的内存区域的值无法改变*/</span><br><span class="line">  *p=10 /*非法*/</span><br><span class="line">    </span><br><span class="line">   int* const p=&amp;x; /*意味着p指向的内存地址不能改变*/</span><br><span class="line">  const int * const p /*意味着p指向的内存地址和其值无法改变*/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>malloc与free函数</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">void*malloc(unsigned int size);</span><br><span class="line">/*基本调用格式*/</span><br><span class="line"></span><br><span class="line">/*malloc函数的返回值是void*,其返回值对其他类型指针赋值时，必须进行显示转换。</span><br><span class="line"></span><br><span class="line">example </span><br><span class="line">int *p=(int*) malloc(5*sizeof(int));</span><br><span class="line">/*返回能存储5个int数据的内存首地址,如果不成功将返回NULL*/</span><br><span class="line">free(p);/*释放内存*/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>注意！free()释放的p一定要与malloc返回的p一致，名称可以不一致，但是指针变量指向的地址必须保持一致。</li>
+</ul>
+</li>
+<li>
+<p>指针数组，数组指针</p>
+<ul>
+<li>
+<p>指针数组</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">char *a[10]=&#123;0&#125;;</span><br><span class="line">//代表指针数组a指向空指针。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43428547/article/details/88956911">https://blog.csdn.net/qq_43428547/article/details/88956911</a></p>
+</li>
+<li>
+<p>函数指针，指针函数</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_37973494/article/details/83150266">https://blog.csdn.net/baidu_37973494/article/details/83150266</a></p>
+<p>函数指针本质上还是指针，有小括号（*p），指针函数本质上还是函数，没有小括号**p，用于返回指针。</p>
+<p>C语言中函数返回指针必须要声明指针函数，另外，C语言不支持返回局部变量的地址，除非是static修饰的静态局部变量。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>字符串</p>
+<ul>
+<li>
+<p>保存字符串的方式</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">char a[]=&quot;hello world!&quot;;/*array*/</span><br><span class="line">//可读可写，可以修改里面的内容，比如a[2]=&#x27;v&#x27;;</span><br><span class="line">char *p=&quot;hello,world!&quot;;//pointer</span><br><span class="line">//可读不可写，比如p[2]=&#x27;a&#x27;不对，但是可以改变指针的方向，p=&quot;you are right!&quot;是允许的。</span><br><span class="line"></span><br><span class="line">具体详情查看：https://www.cnblogs.com/focusDing/p/12435239.html</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>位运算</p>
+<ul>
+<li>
+<p>位逻辑运算符</p>
+<p>&amp;（与） 、^(异或)   、|（或）、~（取反）</p>
+<ul>
+<li>
+<p>&amp;</p>
+<p>与and作用类似 1&amp;0=0 1&amp;1=1 0&amp;1=0 0&amp;0=0</p>
+</li>
+<li>
+<p>^</p>
+<p>如果位异或运算的两个位相同，结果为0，否则为1</p>
+<p>1^1=0  1^0=1 0^1=1 0^0=0</p>
+</li>
+<li>
+<p>|</p>
+<p>1|1=1 1|0=1 0|1=1 0|0=0</p>
+</li>
+<li>
+<p>~</p>
+<p>1变0,0变1</p>
+</li>
+</ul>
+</li>
+<li>
+<p>位移运算符</p>
+<p>&lt;&lt;左移、&gt;&gt;右移</p>
+</li>
+<li>
+<p>原码、反码和补码</p>
+<ul>
+<li>
+<p>原码最高位为符号位（0表示正数，1表示负数）</p>
+</li>
+<li>
+<p>数值反码表示</p>
+<p>正数的反码与原码相同</p>
+<p>负数符号位不变，其余位取反</p>
+</li>
+<li>
+<p>补码表示</p>
+<ul>
+<li>
+<p>正数的补码与原码一致</p>
+</li>
+<li>
+<p>负数的补码符号位为1，其余位为该数绝对值的原码按位取反，然后整个数加1。其实就是反码加一。比如-9的反码为11110110，加一为11110111。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>已知一个数补码求原码</p>
+<ul>
+<li>
+<p>正数</p>
+<ul>
+<li>补码就是原码</li>
+</ul>
+</li>
+<li>
+<p>负数</p>
+<ul>
+<li>符号位不变，其余各位取反，然后在整个数加1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>计算机系统中数值一律用补码表示</p>
+</li>
+</ul>
+</li>
+<li>
+<p>取反运算并不会改变操作数的值，赋值运算才会改变操作数的值。</p>
+</li>
+<li>
+<p>正数a取反得到的数为-（a+1)</p>
+</li>
+<li>
+<p>移位运算</p>
+<ul>
+<li>
+<p>基本形式</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A&lt;&lt;n//左移</span><br><span class="line">A&gt;&gt;n   //右移</span><br><span class="line">  </span><br><span class="line">  //A必须为数字型变量或者常量，包括整型、浮点型、和char型</span><br><span class="line">  //执行移位运算并不改变操作数A的值</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>移位操作不改变操作数的值</p>
+</li>
+<li>
+<p>移位是对每一位（包括符号位）都进行操作，空的位置用0填补（仅针对有符号正数和无符号数）</p>
+</li>
+<li>
+<p>对于正数而言，左移n位意味着操作数乘2<strong>n，右移n意味着除2</strong>n</p>
+</li>
+<li>
+<p>对于负数，当填充的空白位涉及符号位时，编译器会对其进行特殊处理，目前不必细致了解。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>数据结构体</p>
+<ul>
+<li>
+<p>结构体</p>
+<ul>
+<li>
+<p>占用空间</p>
+<ul>
+<li>
+<p>与结构体中的变量类型排序有关</p>
+</li>
+<li>
+<p>占用空间是最大基本类型的整数倍</p>
+</li>
+<li>
+<p>每一个变量的起始地址应是其类型占用空间的整数倍</p>
+</li>
+</ul>
+</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">struct person</span><br><span class="line">&#123;</span><br><span class="line">  char name[20];</span><br><span class="line">  double heigh;</span><br><span class="line">  double weight;</span><br><span class="line">  int age;</span><br><span class="line">&#125;;//记得分号</span><br><span class="line"></span><br><span class="line">struct person lisa;//定义一个person类型的lisa结构体变量</span><br><span class="line">struct person lisa=&#123;&quot;lisa&quot;,160.4,45.6,34&#125;;//定义时赋初值</span><br><span class="line"></span><br><span class="line">//定义时赋初值的另一种方式</span><br><span class="line">struct person</span><br><span class="line">&#123;</span><br><span class="line">  char name[20];</span><br><span class="line">  double heigh;</span><br><span class="line">  double weight;</span><br><span class="line">  int age;</span><br><span class="line">&#125; lisa=&#123;&quot;lisa&quot;,160.4,45.6,34&#125;;//记得加分号。</span><br><span class="line"></span><br><span class="line">//一次性定义几个变量</span><br><span class="line">struct person</span><br><span class="line">&#123;</span><br><span class="line">  char name[20];</span><br><span class="line">  double heigh;</span><br><span class="line">  double weight;</span><br><span class="line">  int age;</span><br><span class="line">&#125; lisa，monica,julia,lily,*psd;//记得加分号.最后一个为person类型的指针</span><br><span class="line"></span><br><span class="line">//用指针的方式输出结构体中的变量</span><br><span class="line">//接上面的*psd</span><br><span class="line">*psd=&amp;lisa;</span><br><span class="line">printf(&quot;%s&quot;,lisa.name);</span><br><span class="line">printf(&quot;%s&quot;,psd-&gt;name);</span><br><span class="line">//-----------等价------------------</span><br><span class="line">printf(&quot;%lf&quot;,lisa.height);</span><br><span class="line">printf(&quot;%lf&quot;,psd-&gt;height);</span><br><span class="line">//-----------等价------------------</span><br><span class="line">printf(&quot;%d&quot;,lisa.age);</span><br><span class="line">printf(&quot;%d&quot;,psd-&gt;age);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>共同体</p>
+<ul>
+<li>
+<p>不论共用体列表中有多少项，在某个确定时刻，共用体变量只能存放一个成员。</p>
+</li>
+<li>
+<p>占用空间</p>
+<ul>
+<li>
+<p>内保存最大的基本类型数据</p>
+</li>
+<li>
+<p>是最大基本类型的整数倍</p>
+</li>
+</ul>
+</li>
+<li>
+<p>用法示例</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">union computerInfo</span><br><span class="line">&#123;</span><br><span class="line">  char typename[20];</span><br><span class="line">  float price;</span><br><span class="line">&#125;;//记得分号</span><br><span class="line"></span><br><span class="line">//用法跟结构体基本一致，但是要注意初始化时仅能初始化一个成员，可以随便选择一个成员初始化</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>typedef和#define的区别</p>
+<ul>
+<li>
+<p>被用于替换其他量的字符不要与C语言中的关键字冲突</p>
+</li>
+<li>
+<p>注意两者替换的顺序</p>
+</li>
+<li>
+<p>typedef 语句后的分号不要忘记，#define不是语句，后面不能加分号，如果#define 结构后面出现分号，会被一起替换</p>
+</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#define DP double*</span><br><span class="line">DP x,y;</span><br><span class="line">//上面的代码表示定义x指针和double变量y</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">typedef double* DP;</span><br><span class="line">DP x,y;</span><br><span class="line">//上面的代码表示定义两个double类型指针变量</span><br><span class="line"></span><br><span class="line">//还用一种用法为结构体设置别名</span><br><span class="line">typedef struct</span><br><span class="line">&#123;</span><br><span class="line">  char name[10];</span><br><span class="line">  int age;</span><br><span class="line">&#125; person;</span><br><span class="line">//本质上为将一个匿名结构体取别名person</span><br><span class="line"></span><br><span class="line">//定义一个结构体变量</span><br><span class="line">person lisa；</span><br><span class="line">//不在需要原来  struct person lisa  （假如person为结构体的名称）</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>枚举类型</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">enum day &#123;Sun,Mon,Tue,Wed,Thu,Fri,Sat&#125;;</span><br><span class="line">enum day=Thu;</span><br><span class="line">//可以给枚举变量中的变量赋值</span><br><span class="line">enum day &#123;Sun,Mon=5,Tue,Wed=9,Thu,Fri,Sat&#125;;</span><br><span class="line">//枚举变量若不主动赋值，将从0开始，往后依次加一</span><br><span class="line">//上面中Sun=0,Mon=5,Tue=6,Wed=9,Thu=10,Fri=11,Sat=12</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>文件</p>
+<ul>
+<li>以指针的方式与文件建立联系</li>
+</ul>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FILE* fp;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>文件打开</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fp=fopen(&quot;.\a.txt&quot;,&quot;r&quot;);</span><br><span class="line">if (fp==NULL)</span><br><span class="line">&#123;</span><br><span class="line">  printf(&quot;can not open this file&quot;);</span><br><span class="line">  getch();</span><br><span class="line">  exit(0);</span><br><span class="line">&#125;</span><br><span class="line">else &#123;</span><br><span class="line">  ........</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>字符读写</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int fgetc(FILE* fpin);</span><br><span class="line">int fputc(int c,FILE *fpout);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>函数操作正确则返回相应字符的ASCII码，若读到文件尾部或者出错，返回EOF。</li>
+</ul>
+</li>
+<li>
+<p>字符串读写</p>
+<ul>
+<li>
+<p>函数原型</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">char * fgets(char *str, int n ,FILE *fpin);</span><br><span class="line">//n表示从文件读出的字符数不超过n-1个，存储在str中，并在末尾加上结束标准\0</span><br><span class="line">int fputs(const char *str ,FILE*fpout);</span><br><span class="line">//写入成功时返回非负值，否则返回EOF</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>一般而言，读取文件内容的函数，成功执行将返回指针，否则返回NULL；写入文件的函数执行成功返回非负数，执行失败返回EOF。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>块读写函数fread、fwrite</p>
+<ul>
+<li>
+<p>函数原型</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">size_t fread(void *p, size_t size, size_t num, FILE* fpin);</span><br><span class="line">size_t fwrite(void *p, size_t size, size_t num, FILE* fpout);</span><br><span class="line"></span><br><span class="line">//size:内存中基本单元占的字节数</span><br><span class="line">//num: 内存中有几个基本单元</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>格式化文件输入输出</p>
+<ul>
+<li>
+<p>fprintf()</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fprintf(FILE*, const char*,...);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>fscanf()</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fscanf(FILE*, const char*,...);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>函数正确处理时返回处理的字符数，当出错或者文件尾时，返回EOF（-1）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>文件定位</p>
+<ul>
+<li>
+<p>移动指针到文件开头</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rewind(FILE*fp);</span><br><span class="line">//该函数没有返回值；</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>获取指针当前位置</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">long ftell (FILE*);</span><br><span class="line">//执行成功，返回当前文件指针位置的值，否则，返回-1L.(long型-1)</span><br><span class="line"></span><br><span class="line">//用于防错处理</span><br><span class="line">if (ftell(fp)==-1)</span><br><span class="line">  printf(&quot;A file error has occurred at....);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>移动指针</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int fseek (FILE*fp, long offset, int startPos);</span><br><span class="line">//执行成功返回0，否则返回非0</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>起始点</th>
+<th>值</th>
+<th>名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文件开始</td>
+<td>0</td>
+<td>seek_set</td>
+</tr>
+<tr>
+<td>文件结束</td>
+<td>2</td>
+<td>seek_end</td>
+</tr>
+<tr>
+<td>当前位置</td>
+<td>1</td>
+<td>seek_cur</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>fseek和ftell函数只能处理二进制文件，因此打开文件的时候，需要以二进制文件模式打开</p>
+</li>
+<li>
+<p>文件关闭</p>
+   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fclose(FILE*f);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>指针、结构体和结构体数组</p>
+<ul>
+<li>
+<p>指针访问结构体成员</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(*指针).成员    //注意.的优先级大于*,所以一定要记得加（）.否则将导致错误。</span><br><span class="line">指针-&gt;成员</span><br><span class="line">//两种方式等价</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>函数进阶</p>
+<ul>
+<li>
+<p>动态申请内存是在堆中完成的，函数返回不会释放堆内存</p>
+</li>
+<li>
+<p>栈内存的内容会被自动清除，因此不要返回栈区指针</p>
+</li>
+<li>
+<p>堆区</p>
+<ul>
+<li>
+<p>堆区由程序员管理，修改手段宽松</p>
+</li>
+<li>
+<p>变量的分配和释放使用malloc和free</p>
+</li>
+<li>
+<p>堆区非常大，通常受限于物理内存</p>
+</li>
+<li>
+<p>堆区需要使用指针访问</p>
+</li>
+</ul>
+</li>
+<li>
+<p>静态内存区</p>
+<ul>
+<li>静态内存区在整个生命周期都存在，而且通常用来存取全局变量，或者通过static关键字创建的变量。</li>
+</ul>
+</li>
+<li>
+<p>结构体作为函数参数，一般选择传址调用而不是传值</p>
+</li>
+</ul>
+</li>
+<li>
+<p>作业小东西</p>
+<ul>
+<li>
+<p>二维数组一行中保存有字符串，交换行用数组作为中间变量，别用指针。因为指针没有指向有空间的内存块，另外容易值发生改变。</p>
+</li>
+<li>
+<p>&amp;&amp;</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">char a,b;</span><br><span class="line">if (a &amp;&amp; b)//可用于判断a或者b中是否有&#x27;\0&#x27;，否则a&amp;&amp;b为1.</span><br><span class="line">  </span><br><span class="line"> int a,b;</span><br><span class="line">a &amp;&amp; b;</span><br><span class="line">//同理用于判断a或者b中是否有0，只有存在0时a&amp;&amp;b才等于0.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>字符串比较慎用==</p>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://powerhcl.github.io">Richard Li</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://powerhcl.github.io/2024/05/04/Cnote/">https://powerhcl.github.io/2024/05/04/Cnote/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://powerhcl.github.io" target="_blank">Have a good time!</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/04/29/think4-29/" title="困倦"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">困倦</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Richard Li</div><div class="author-info__description">I want to leave some precious(lovely) chronicles for myself and create some warmth for the world</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/PowerHCl"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/PowerHCl" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3037002030@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Hi, stranger. Welcome to my website.</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/04/Cnote/" title="无题">无题</a><time datetime="2024-05-04T15:31:37.950Z" title="发表于 2024-05-04 23:31:37">2024-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/29/think4-29/" title="困倦">困倦</a><time datetime="2024-04-29T12:50:42.000Z" title="发表于 2024-04-29 20:50:42">2024-04-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/25/rudang/" title="入党发展对象答辩">入党发展对象答辩</a><time datetime="2024-04-25T04:40:44.000Z" title="发表于 2024-04-25 12:40:44">2024-04-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/22/biji/" title="结构化表达笔记">结构化表达笔记</a><time datetime="2024-04-22T06:05:41.000Z" title="发表于 2024-04-22 14:05:41">2024-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/21/yuhuatai/" title="雨花台游记">雨花台游记</a><time datetime="2024-04-21T02:05:41.000Z" title="发表于 2024-04-21 10:05:41">2024-04-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Richard Li</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcom to my <a href="https://powerhcl.github.io/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
